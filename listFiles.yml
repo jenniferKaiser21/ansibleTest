@@ -5,7 +5,7 @@
     - name: List files in current directory
       file:
         path: .
-        state: list
+        state: file
       register: files
 
     - name: Print the list of files
