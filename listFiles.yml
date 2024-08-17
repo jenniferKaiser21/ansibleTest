@@ -1,0 +1,13 @@
+---
+- hosts: all
+
+  tasks:
+    - name: List files in current directory
+      file:
+        path: .
+        state: list
+      register: files
+
+    - name: Print the list of files
+      debug:
+        var: files.files
