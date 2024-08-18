@@ -4,7 +4,7 @@
   tasks:
     - name: List files in current directory
       file:
-        path: .
+        path: ./
         state: file
       register: files
 
